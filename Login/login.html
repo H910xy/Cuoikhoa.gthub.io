@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login_style.css">
+
+    
+</head>
+<body>
+    <div class="container" id="container">
+
+        <!-- Log In -->
+        <div class="container_form container-login">
+            <form action="#" class="form" id="form2">
+                <h2 class="form_title">Log In</h2>
+                <input type="email" placeholder="Email" class="input" id="emailLogin" />
+                <input type="password" placeholder="Password" class="input" id="passwordLogin" />
+                <a href="#" class="link">Forgot your password?</a>
+                <button type="button" onclick="handleLogin()" class="btn">Log In</button>
+            </form>
+        </div>
+
+
+        <!-- Sign Up -->
+        <div class="container_form container-signup">
+            <form action="#" class="form" id="form1">
+                <h2 class="form_title">Sign Up</h2>
+                <input type="text" placeholder="User" id="name" class="input" />
+                <input type="email" placeholder="Email" id="email" class='input'/>
+                <input type="password" placeholder="Password" id="password" class="input" />
+                <button type="button" onclick='handleSignUp()'class="btn">Sign Up</button>
+            </form>
+        </div>
+    
+    
+        <!-- Overlay -->
+        <div class="container_overlay">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <button class="btn" id="logIn" onclick="logInOverlay()">Log In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <button class="btn" id="signUp" onclick="signUpOverlay()">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn"  onclick="window.location.href='./../Main/main_public/main_public.html'">
+        Back
+    </button>
+    <script src="login.js"></script>
+</body>
+</html>
