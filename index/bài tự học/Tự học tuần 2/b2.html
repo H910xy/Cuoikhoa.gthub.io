@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 2</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .todo-card {
+      background-color: #ffffff;
+      width: 500px;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .todo-card h2 {
+      margin-bottom: 25px;
+      font-size: 24px;
+      color: #111;
+    }
+
+    .todo-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .todo-item {
+      display: flex;
+      align-items: center;
+      padding: 14px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      position: relative;
+    }
+
+    /* CSS Selector: nth-child(odd) và nth-child(even) */
+    .todo-list li:nth-child(odd) {
+      background-color: #f4f4f5;
+    }
+
+    .todo-list li:nth-child(even) {
+      background-color: #ffffff;
+    }
+
+    /* CSS Selector: :hover */
+    .todo-list li:hover {
+      background-color: #fef08a !important;
+    }
+
+    
+    .todo-list li.active {
+      background-color: #fef08a !important;
+    }
+
+    .checkbox-square {
+      width: 18px;
+      height: 18px;
+      background-color: #e4e4e7;
+      border-radius: 3px;
+      margin-right: 18px;
+    }
+
+    .todo-text {
+      font-size: 15px;
+      color: #27272a;
+    }
+
+    .badge-new {
+      margin-left: auto;
+      background-color: #f59e0b;
+      color: white;
+      font-size: 11px;
+      font-weight: bold;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+
+    .completed .todo-text {
+      text-decoration: line-through;
+      color: #a1a1aa;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="todo-card">
+    <h2>To Do List</h2>
+    <ul class="todo-list">
+      <li class="todo-item" onclick="toggleSelect(this)">
+        <span class="checkbox-square"></span>
+        <span class="todo-text">Go shopping</span>
+      </li>
+
+      <li class="todo-item" onclick="toggleSelect(this)">
+        <span class="checkbox-square"></span>
+        <span class="todo-text">Listen to music</span>
+      </li>
+
+      <li class="todo-item" onclick="toggleSelect(this)">
+        <span class="checkbox-square"></span>
+        <span class="todo-text">Watching Tv Visit</span>
+      </li>
+
+      <li class="todo-item active" onclick="toggleSelect(this)">
+        <span class="checkbox-square"></span>
+        <span class="todo-text">Learn CSS Selectors</span>
+        <span class="badge-new">New!</span>
+      </li>
+
+      <li class="todo-item" onclick="toggleSelect(this)">
+        <span class="checkbox-square"></span>
+        <span class="todo-text">Practice CSS Skills</span>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    function toggleSelect(element) {
+      
+      element.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>

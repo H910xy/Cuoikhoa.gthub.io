@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lộ Trình Nâng Cấp Kỹ Năng</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <h2>Lộ Trình Nâng Cấp Kỹ Năng</h2>
+      <div class="target-badge">Kỹ năng mục tiêu: <span id="total-skills">0</span></div>
+    </div>
+
+
+    <div class="control-box">
+      <label for="skill-input">Kỹ năng:</label>
+      <input type="text" id="skill-input" placeholder="Tên kỹ năng mới...">
+      <div class="btn-group">
+        <button class="btn-action" id="btn-push">push</button>
+        <button class="btn-action" id="btn-pop">pop</button>
+        <button class="btn-action" id="btn-unshift">unshift</button>
+        <button class="btn-action" id="btn-shift">shift</button>
+      </div>
+    </div>
+
+    <ul id="skill-list"></ul>
+    <div class="log-section">
+      <h4>Nhật ký hệ thống:</h4>
+      <ul id="log-list"></ul>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

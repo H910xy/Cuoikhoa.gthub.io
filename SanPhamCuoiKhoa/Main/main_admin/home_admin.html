@@ -1,0 +1,151 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MXH</title>
+    <meta name="description" content="An editorial magazine wireframe — header with search, section nav, a featured story over a popular-posts row, thumbnail article rails on both sides, and footer. Skeleton-only, mobile-first.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="bento" id="layout-grid" aria-busy="true">
+
+        <header class="cell cell--header" aria-labelledby="magazine-header-title">
+            <h2 class="cell__tag" id="magazine-header-title">HEADER</h2>
+            <span class="sk sk--dot-lg" aria-hidden="true"></span>
+            <span class="sk sk--bar sk--w-40" aria-hidden="true"></span>
+            <span class="sk sk--search" aria-hidden="true"></span>
+            <span class="sk sk--dot-lg" aria-hidden="true"></span>
+        </header>
+
+        <nav class="cell cell--nav" aria-labelledby="magazine-nav-title">
+            <h2 class="cell__tag" id="magazine-nav-title">NAV</h2>
+            <ul class="sk-list" aria-hidden="true">
+                <li>Trang chủ</li>
+                <li class="sk sk--pill sk--dim"></li>
+                <li class="sk sk--pill sk--dim"></li>
+                <li class="sk sk--pill sk--dim"></li>
+            </ul>
+            <span class="sk sk--spacer" aria-hidden="true"></span>
+            <button type="button" class="btn" onclick="window.location.href='./../../Login/login.html'">Log In</button>
+        </nav>
+
+        <aside class="cell cell--left" aria-labelledby="magazine-left-title">
+            <h2 class="cell__tag" id="magazine-left-title">LEFT-SIDE</h2>
+            <ul class="sk-list mag-articles" aria-hidden="true">
+                <li>
+                    <article class="mag-article">
+                        <span class="sk sk--thumb"></span>
+                        <div class="sk-col sk-col--art">
+                            <span class="sk sk--bar sk--w-60"></span>
+                            <span class="sk sk--bar sk--w-40 sk--dim"></span>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="mag-article">
+                        <span class="sk sk--thumb"></span>
+                        <div class="sk-col sk-col--art">
+                            <span class="sk sk--bar sk--w-60"></span>
+                            <span class="sk sk--bar sk--w-40 sk--dim"></span>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="mag-article">
+                        <span class="sk sk--thumb"></span>
+                        <div class="sk-col sk-col--art">
+                            <span class="sk sk--bar sk--w-60"></span>
+                            <span class="sk sk--bar sk--w-40 sk--dim"></span>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </aside>
+
+        <main class="cell cell--main" aria-labelledby="magazine-main-title">
+            <h2 class="cell__tag" id="magazine-main-title">MAIN</h2>
+            <article class="mag-feature" aria-labelledby="magazine-featured-title">
+                <h3 class="mag-feat-tag" id="magazine-featured-title">FEATURED</h3>
+                <span class="sk sk--hero" aria-hidden="true"></span>
+                <div class="sk-row sk-row--between" aria-hidden="true">
+                    <span class="sk sk--bar sk--w-60"></span>
+                    <span class="sk sk--pill"></span>
+                </div>
+                <span class="sk sk--bar sk--w-50 sk--dim" aria-hidden="true"></span>
+            </article>
+            <section class="mag-popular" aria-labelledby="magazine-popular-title">
+                <h3 class="mag-feat-tag" id="magazine-popular-title">POPULAR POSTS</h3>
+                <ul class="sk-list mag-pop-grid" aria-hidden="true">
+                    <li>
+                        <article class="mag-pop-card">
+                            <span class="sk sk--sq-lg"></span>
+                            <span class="sk sk--bar sk--w-60"></span>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="mag-pop-card">
+                            <span class="sk sk--sq-lg"></span>
+                            <span class="sk sk--bar sk--w-60"></span>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="mag-pop-card">
+                            <span class="sk sk--sq-lg"></span>
+                            <span class="sk sk--bar sk--w-60"></span>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <aside class="cell cell--right" aria-labelledby="magazine-right-title">
+            <h2 class="cell__tag" id="magazine-right-title">RIGHT-SIDE</h2>
+            <ul class="sk-list mag-articles" aria-hidden="true">
+                <li>
+                    <article class="mag-article">
+                        <span class="sk sk--thumb"></span>
+                        <div class="sk-col sk-col--art">
+                            <span class="sk sk--bar sk--w-60"></span>
+                            <span class="sk sk--bar sk--w-40 sk--dim"></span>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="mag-article">
+                        <span class="sk sk--thumb"></span>
+                        <div class="sk-col sk-col--art">
+                            <span class="sk sk--bar sk--w-60"></span>
+                            <span class="sk sk--bar sk--w-40 sk--dim"></span>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="mag-article">
+                        <span class="sk sk--thumb"></span>
+                        <div class="sk-col sk-col--art">
+                            <span class="sk sk--bar sk--w-60"></span>
+                            <span class="sk sk--bar sk--w-40 sk--dim"></span>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </aside>
+
+        <footer class="cell cell--footer" aria-labelledby="magazine-footer-title">
+            <h2 class="cell__tag" id="magazine-footer-title">FOOTER</h2>
+            <span class="sk sk--dot" aria-hidden="true"></span>
+            <span class="sk sk--bar sk--w-40" aria-hidden="true"></span>
+            <span class="sk sk--spacer" aria-hidden="true"></span>
+            <span class="sk sk--bar sk--w-50 sk--dim" aria-hidden="true"></span>
+        </footer>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

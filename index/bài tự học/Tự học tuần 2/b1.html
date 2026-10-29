@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 1</title>
+  <style>
+ 
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+      border: 2px dashed #bbb;
+      padding: 15px;
+      background-color: #e5e5e5;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .header {
+      background-color: #5bb396;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+
+    .images {
+      background-color: #e6a741;
+      border: 3px solid #f2c779;
+      color: #333;
+      text-align: center;
+      padding: 50px 0;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+
+    .group {
+      background-color: #d98863;
+      border: 3px solid #f1b398;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+
+    .row {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .row-3 .card {
+      flex: 1;
+      padding: 25px 0;
+      text-align: center;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .row-4 .card {
+      flex: 1;
+      padding: 20px 0;
+      text-align: center;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    
+    .row-green .card {
+      background-color: #4fa88d;
+      color: white;
+      border: 2px solid #2e7a63;
+    }
+
+    .row-yellow .card {
+      background-color: #f5b041;
+      border: 4px solid #f9d58b;
+      color: #333;
+    }
+
+    .row-brown .card {
+      background-color: #c07d57;
+      border: 3px solid #8e5433;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="title">Bố cục trang web </div>
+    
+    <div class="header">Header</div>
+    
+    <div class="images">Images</div>
+    
+    <div class="group">Group</div>
+
+    <!-- Hàng 3 Article xanh -->
+    <div class="row row-3 row-green">
+      <div class="card">Article</div>
+      <div class="card">Article</div>
+      <div class="card">Article</div>
+    </div>
+
+    <!-- Hàng 4 Article vàng -->
+    <div class="row row-4 row-yellow">
+      <div class="card">Article</div>
+      <div class="card">Article</div>
+      <div class="card">Article</div>
+      <div class="card">Article</div>
+    </div>
+
+    <!-- Hàng 3 Article nâu -->
+    <div class="row row-3 row-brown">
+      <div class="card">Article</div>
+      <div class="card">Article</div>
+      <div class="card">Article</div>
+    </div>
+  </div>
+
+</body>
+</html>

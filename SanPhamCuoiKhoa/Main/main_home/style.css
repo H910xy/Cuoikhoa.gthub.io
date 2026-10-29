@@ -48,7 +48,7 @@ body {
 	font-size: 0.8rem;
 	font-weight: bold;
 	letter-spacing: 0.1rem;
-	padding: 0.9rem 4rem;
+	padding: 1rem 3rem;
 	text-transform: uppercase;
 	transition: transform 80ms ease-in;
 }
@@ -191,12 +191,32 @@ body {
     width: 60%;
 }
 
-.sk--search {
+.search-box {
     width: min(34%, 320px);
     height: 38px;
     margin-left: auto;
-    border-radius: 20px;
+    border-radius: 15px;
+    border: 1px solid (black);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
+
+.search-box input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+#no-results {
+    display: none;
+    color: #d32f2f;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
 
 .sk--pill {
     width: 82px;

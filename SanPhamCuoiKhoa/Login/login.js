@@ -149,7 +149,7 @@ const handleLogin = (event) => {
 
     // 4. Đăng nhập tài khoản thường
     if (emailVal === storedUser.email && passwordVal === storedUser.password) {
-        ThongBao("Đăng nhập thành công! Đang vào trang chủ...", "./../Main/main.html", 1000);
+        ThongBao("Đăng nhập thành công! Đang vào trang chủ...", "./..//Main/main_home/home.html", 1000);
     } else {
         ThongBaoLoi("Tài khoản hoặc mật khẩu không chính xác!");
     }

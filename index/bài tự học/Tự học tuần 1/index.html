@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiết kế trang web</title>
+    <style>
+        .body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header, footer {
+            background-color: #e8f3ff;
+            padding: 20px;
+        }
+        .nav {
+            margin: 20px 0;
+        }
+        .nav a {
+            margin-right: 20px;
+        }
+        .section {
+            margin: 28px 0;
+        }
+        .img, video {
+            display: block;
+            max-width: 100%;
+            margin: 15px 0;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .th, td {
+            border: 1px solid #555;
+            padding: 10px;
+            text-align: left;
+        }
+        .th {
+            background-color: #e8f3ff;
+        }
+        .background {
+            background-color: #f0fff4;
+            
+        }
+        .a{
+            background-color: #5da871;
+        }
+        .b{
+            background-color : white;
+        }
+    </style>
+</head>
+<body>
+    <div class = "background">
+        <header>
+            <h1>Nền tảng web</h1>
+            <p>Khám phá nền tảng HTML và CSS để xây dựng những trang web rõ ràng, hiện đại.</p>
+
+        </header>
+        <ul>
+            <li><a href="index.html">Giới thiệu</a></li>
+            <li><a href="index2.html">Mục tiêu</a></li>
+            <li><a href="bai3.html">Nội dung học phần</a></li>
+            <li><a href="sub-video.mp4">Video giới thiệu</a></li>
+            <li><a href="lichhoc.html">Lịch học phần</a></li>
+            <li><a href="lienhe.html">Liên hệ</a></li>
+        </ul>
+
+        <main>
+            <section>
+                <h2>Giới thiệu học phần</h2>
+                <p>Học phần cung cấp kiến thức nền tảng về cấu trúc, nội dung và cách trình bày một trang web bằng HTML và CSS.</p>
+                <img src="javascript-logo.png" alt="Minh họa thiết kế trang web" width="150" height="150">
+                <p>Hành trình từ HTML tới một trang web hoàn chỉnh</p>
+            </section>
+
+            <section>
+                <h2>Mục tiêu học phần</h2>
+                <ul>
+                    <li>Nắm vững cấu trúc HTML và các thẻ ngữ nghĩa cơ bản</li>
+                    <li>Sử dụng đúng các thẻ semantic như header, nav, main, section và footer.</li>
+                    <li>Biết cách trình bày nội dung bằng CSS và tạo liên kết giữa các trang.</li>
+                    <li>Vận dụng kiến thức để xây dựng một trang web hoàn chỉnh.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Nội dung học phần</h2>
+                <ol>
+                    <li>Buổi 1 : HTML cơ bản, semantic HTML, bảng dữ liệu, nhúng media</li>
+                    <li>Buổi 2 : CSS cơ bản</li>
+                    <li>Buổi 3 : Selector nâng cao và liên kết nâng cao</li>
+                    <li>Buổi 4 : Chia layout vs Flexbox</li>
+                    <li>Buổi 5 : Thiết kế form </li>
+                </ol>
+            </section>
+            <h2>Video giới thiệu học phần</h2>
+            <video controls width="500">
+                <source src="sub-video.mp4" type="video/mp4">
+                Trình duyệt của bạn không hỗ trợ phát video.
+            </video>
+            <section>
+                <h2>Lịch trình học phần</h2>
+                <table>
+                    <tbody>
+                    
+                        <tr class="a">
+                            <td>Buổi học</td>
+                            <td>Chủ đề</td>
+                        </tr>
+                    
+                    
+                        <tr>
+                            <td>Buổi 1</td>
+                            <td>HTML cơ bản, semantic HTML, bảng dữ liệu, nhúng media</td>
+                        </tr>
+                        <tr class="b">
+                            <td>Buổi 2</td>
+                            <td>CSS cơ bản</td>
+                        </tr>
+                        <tr>
+                            <td>Buổi 3</td>
+                            <td>Selector</td>
+                        </tr>
+                        <tr class="b">
+                            <td>Buổi 4</td>
+                            <td>Chia layout vs Flexbox</td>
+                        </tr>
+                        <tr>
+                            <td>Buổi 5</td>
+                            <td>Thiết kế form</td>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026-Học phần Thiết kế trang web</p>
+        <nav aria-label="Điều hướng chính">
+            <a href="lienhe.html">Xem trang liên hệ</a>
+            <a href="index.html">Lên trang đầu</a>
+        </nav>
+        </footer>
+    </div>
+</body>
+</html>
